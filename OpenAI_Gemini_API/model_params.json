@@ -1,0 +1,127 @@
+{
+    "gemini" : {
+        "temperature": {
+            "type": "slider",
+            "label": "Temperature",
+            "min": 0.0,
+            "max": 1.5,
+            "default": 1.0,
+            "step": 0.1,
+            "description": "Controls the creativity/randomness of the generated response."
+        },
+        "top_p": {
+            "type": "slider",
+            "label": "Top-p",
+            "min": 0.0,
+            "max": 1.0,
+            "default": 0.9,
+            "step": 0.05,
+            "description": "Controls the diversity by considering the top-p probability mass."
+        },
+        "top_k": {
+            "type": "slider",
+            "label": "Top-k",
+            "min": 1,
+            "max": 40,
+            "default": 40,
+            "step": 1,
+            "description": "Controls diversity by limiting to the top-k probable tokens."
+        },
+        "max_output_tokens": {
+            "type": "slider",
+            "label": "Max Output Tokens",
+            "min": 1,
+            "max": 2048,
+            "default": 512,
+            "step": 10,
+            "description": "Limits the number of tokens generated in the response."
+        }
+    },
+    "openai" : {
+        "temperature": {
+            "type": "slider",
+            "label": "Temperature",
+            "min": 0.0,
+            "max": 2.0,
+            "default": 1.0,
+            "step": 0.1,
+            "description": "Controls the randomness of the model's responses."
+        },
+        "top_p": {
+            "type": "slider",
+            "label": "Top-p",
+            "min": 0.0,
+            "max": 1.0,
+            "default": 0.9,
+            "step": 0.05,
+            "description": "Controls the diversity of the output by limiting the model to the top-p probability mass."
+        },
+        "max_tokens": {
+            "type": "slider",
+            "label": "Max Tokens",
+            "min": 10,
+            "max": 1500,
+            "default": 150,
+            "step": 10,
+            "description": "Limits the maximum number of tokens in the generated response."
+        }
+    },
+    "llama3.2": {
+        "temperature": {
+            "type": "slider",
+            "label": "Temperature",
+            "min": 0.0,
+            "max": 2.0,
+            "default": 1.0,
+            "step": 0.1,
+            "description": "Controls the creativity/randomness of the generated response. Higher values make the output more random, lower values make it more deterministic."
+        },
+        "top_p": {
+            "type": "slider",
+            "label": "Top-p",
+            "min": 0.0,
+            "max": 1.0,
+            "default": 0.9,
+            "step": 0.05,
+            "description": "Controls the diversity of the generated response. Higher values increase diversity by considering more probable tokens."
+        },
+        "top_k": {
+            "type": "slider",
+            "label": "Top-k",
+            "min": 1,
+            "max": 50,
+            "default": 40,
+            "step": 1,
+            "description": "Controls diversity by limiting the sampling to the top-k most likely tokens."
+        }
+    },
+    "deepseek-r1:1.5b": {
+        "temperature": {
+            "type": "slider",
+            "label": "Temperature",
+            "min": 0.0,
+            "max": 2.0,
+            "default": 1.0,
+            "step": 0.1,
+            "description": "Controls randomness. Higher values increase creativity, lower values make responses more focused."
+        },
+        "top_p": {
+            "type": "slider",
+            "label": "Top-p",
+            "min": 0.0,
+            "max": 1.0,
+            "default": 0.85,
+            "step": 0.05,
+            "description": "Adjusts the probability mass for generating diverse outputs. Reduces diversity when closer to 0."
+        },
+        "top_k": {
+            "type": "slider",
+            "label": "Top-k",
+            "min": 1,
+            "max": 100,
+            "default": 50,
+            "step": 1,
+            "description": "Limits token choices to the top-k most probable tokens for diversity control."
+        }
+    }
+}
