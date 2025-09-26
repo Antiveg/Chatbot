@@ -39,7 +39,7 @@ def get_model_names():
     return names
 
 def get_model_params(name):
-    with open("model_params.json", "r") as f:
+    with open("OpenAI_Gemini_API/model_params.json", "r") as f:
         data = json.load(f)
     return data[name]
 
